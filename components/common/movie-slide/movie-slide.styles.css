@@ -50,3 +50,13 @@
 .movie_section_more:hover {
   cursor: pointer;
 }
+
+
+/*Movie Modal*/
+.movies-slide-modal {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.movies-slide-modal .modal-body {
+  background-color: #000;
+}

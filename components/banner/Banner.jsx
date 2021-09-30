@@ -9,10 +9,9 @@ const Banner = (props) => {
                 <div className="banner_content">
                     <h1 className='banner-title'>{props.title}</h1>
                     <p className='movie-overview'>{props.overview}</p>
-
                     <div className='btn-container'>
                         <button className='btn-reg'><i className="las la-play-circle"/>Play</button>
-                        <button className='btn-dark'><i className="las la-info"/> More Info</button>
+                        <a href={`/movie-info?id=${props.id}`}><button className='btn-dark'><i className="las la-info"/> More Info</button></a>
                     </div>
                 </div>
             <div className="faded-gradient"/>
