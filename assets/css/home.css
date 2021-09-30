@@ -1,0 +1,216 @@
+/*HERO*/
+.hero {
+    height: 670px;
+    margin-top: -90px;
+}
+
+.carousel-inner {
+    /*height: 800px !important;*/
+}
+
+        /*Spinner*/
+.lds-grid {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.lds-grid div {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
+    animation: lds-grid 1.2s linear infinite;
+}
+.lds-grid div:nth-child(1) {
+    top: 8px;
+    left: 8px;
+    animation-delay: 0s;
+}
+.lds-grid div:nth-child(2) {
+    top: 8px;
+    left: 32px;
+    animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(3) {
+    top: 8px;
+    left: 56px;
+    animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(4) {
+    top: 32px;
+    left: 8px;
+    animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(5) {
+    top: 32px;
+    left: 32px;
+    animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(6) {
+    top: 32px;
+    left: 56px;
+    animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(7) {
+    top: 56px;
+    left: 8px;
+    animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(8) {
+    top: 56px;
+    left: 32px;
+    animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(9) {
+    top: 56px;
+    left: 56px;
+    animation-delay: -1.6s;
+}
+@keyframes lds-grid {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+        /*Carousel*/
+.pic-ctn {
+    width: 100%;
+    height: 100%;
+    max-height: 800px;
+}
+
+@keyframes display {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    30% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+}
+
+
+        /*Custom Carousel*/
+
+.pic-ctn {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+}
+
+.pic-ctn .custom-carousel {
+    position: absolute;
+    top: 0;
+    /*left: calc(50% - 100px);*/
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    animation: display 18s infinite;
+}
+
+.custom-carousel:nth-child(1) {
+    animation-delay: 3s;
+}
+.custom-carousel:nth-child(2) {
+    animation-delay: 6s;
+}
+.custom-carousel:nth-child(3) {
+    animation-delay: 9s;
+}
+.carousel-inner:nth-child(4) {
+    animation-delay: 12s;
+}
+.custom-carousel:nth-child(5) {
+    animation-delay: 15s;
+}
+
+
+.custom-carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+    position: relative;
+    filter: brightness(50%);
+}
+
+/*.custom-carousel-item:before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    background-color: #000000;*/
+/*    z-index: -1;*/
+/*}*/
+
+.movie-detail {
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    width: 30%;
+    height: 400px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.movie-detail h1,
+.movie-detail p {
+    color: #fff;
+}
+
+.movie-detail h1 {
+    font-family: 'Electrolize', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.movie-detail p {
+    text-align: justify;
+    font-family: 'Lato', sans-serif;
+}
+
+.genre-item {
+    color: #000;
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-size: 12px;
+    width: 90px;
+    min-width: 70px;
+    max-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Scheherazade New', serif;
+    font-weight: bolder;
+    transition: 0.3s transform;
+}
+
+.genre-item:hover {
+    transform: scale(1.2);
+
+}
